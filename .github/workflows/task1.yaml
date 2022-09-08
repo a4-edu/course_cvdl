@@ -1,9 +1,9 @@
-name: Task1 evaluation
+name: Task1 eval
 
 on: [push]
 
 jobs:
-  evalfull:
+  Task1-eval-full:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,7 +20,7 @@ jobs:
       - name: Task1 full evaluation
         run: |
           pytest --pyargs abbyy_course_cvdl_t1
-  evalfailfast:
+  Task1-eval-failfast:
     runs-on: ubuntu-latest
     strategy:
       matrix:
