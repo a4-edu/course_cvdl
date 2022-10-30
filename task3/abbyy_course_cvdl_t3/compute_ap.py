@@ -19,8 +19,9 @@ def update_leaderboard_score(username, score):
     # находим текущий скор
     current_score = None
     for player_data in board['players']:
-        if username == player_data['player_name']:
+        if username == player_data['name']:
             current_score = player_data['score']
+            current_id = player_data['id']
             break
     if current_score is None:
         return "username not found"
@@ -31,8 +32,8 @@ def update_leaderboard_score(username, score):
         return
 
     # если есть разница - отправляем ее
-    data = {"player_name": username, "score" : delta, 'comment': '{:+2.3f}'.format(delta)}
-    r = requests.post(base_url.format(etoken) + 'add_single_score', json=data)
+    data = {"player_id": current_id, "score" : delta, 'comment': '{:+2.3f}'.format(delta)}
+    r = requests.post(base_url.format(etoken) + 'score', json=data)
     if not r.ok:
         return r.json()
 
