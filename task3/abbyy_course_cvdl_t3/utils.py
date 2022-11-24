@@ -58,7 +58,7 @@ def interpolated_average_precision_from_pr(recall_list, precision_list):
     inv_precision_list = precision_list[::-1]
     inv_recall_list = recall_list[::-1]
     p_inter = -1
-    prev_rec = 1.0
+    prev_rec = recall_list[0]
     for prec, rec in zip(precision_list, recall_list):
         if prec > p_inter:
             p_inter = prec
@@ -83,25 +83,23 @@ def evaluate_ap_from_cocotext_json(*,
     results = coco_text.loadRes(str(path))
     precisions = []
     recalls = []
-
-    for score_thr in np.arange(0, 1, 0.1):
+    eps = 1e-6
+    for score_thr in np.arange(0, 1 + eps, 0.1):
         matches = coco_evaluation.getDetections(
             coco_text,
             results,
             imgIds=coco_text.val,
-            score_threshold=score_thr,
+            score_threshold=score_thr + eps,
             area_fraction_threshold=area_fraction_threshold
         )
         tp = len(matches['true_positives'])
         fp = len(matches['false_positives'])
         fn = len(matches['false_negatives'])
-        eps = 1e-6
         precisions.append(
-            tp / (tp + fp + eps)
+            (tp + eps) / (tp + fp + eps)
         )
         recalls.append(
             tp / (tp + fn + eps)
         )
     ap = interpolated_average_precision_from_pr(recalls, precisions)
     return ap, precisions, recalls
-

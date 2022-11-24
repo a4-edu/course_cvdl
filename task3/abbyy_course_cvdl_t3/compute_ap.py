@@ -54,6 +54,6 @@ if __name__ == "__main__":
         username = str(sys.argv[1])
         err_message = update_leaderboard_score(username, ap * 100)
         if err_message is None:
-            print(f"Скор AP обновлен в таблице для пользователя '{username}'")
+            print(f"Скор (v2) AP обновлен в таблице для пользователя '{username}'")
         else:
             print(f"Не удалось обновить скор в таблице для пользователя '{username}': {err_message}")
