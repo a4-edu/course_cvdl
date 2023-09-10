@@ -2,8 +2,8 @@ import json
 from typing import List
 from pathlib import Path
 import numpy as np
-from abbyy_course_cvdl_t3.coco_text import COCO_Text
-from abbyy_course_cvdl_t3 import coco_evaluation
+from a4_course_cvdl_t3.coco_text import COCO_Text
+from a4_course_cvdl_t3 import coco_evaluation
 
 
 def dump_detections_to_cocotext_json(*,

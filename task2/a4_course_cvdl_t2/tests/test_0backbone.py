@@ -1,7 +1,7 @@
 import torch
 
-from abbyy_course_cvdl_t2.backbone import HeadlessPretrainedResnet18Encoder, HeadlessResnet18Encoder
-from abbyy_course_cvdl_t2.backbone import UpscaleTwiceLayer, ResnetBackbone
+from a4_course_cvdl_t2.backbone import HeadlessPretrainedResnet18Encoder, HeadlessResnet18Encoder
+from a4_course_cvdl_t2.backbone import UpscaleTwiceLayer, ResnetBackbone
 
 
 def test_encoders():

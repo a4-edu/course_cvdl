@@ -1,7 +1,7 @@
 import torch
 
-from abbyy_course_cvdl_t2.network import CenterNet, PointsNonMaxSuppression
-from abbyy_course_cvdl_t2.convert import ObjectsToPoints, PointsToObjects
+from a4_course_cvdl_t2.network import CenterNet, PointsNonMaxSuppression
+from a4_course_cvdl_t2.convert import ObjectsToPoints, PointsToObjects
 
 from .obj_samples import OBJ0, OBJ1, get_obj_samples
 

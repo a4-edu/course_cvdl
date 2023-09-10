@@ -4,9 +4,9 @@ from pathlib import Path
 
 import pytest
 
-from abbyy_course_cvdl_t1.relu import ReluLayer
+from a4_course_cvdl_t1.conv import ConvLayer
 
-TESTS_PATH_FILE = os.environ.get("ABBYY_TESTS_PATH", Path(__file__).parent / 'data' / 'relu.json')
+TESTS_PATH_FILE = os.environ.get("A4_TESTS_PATH", Path(__file__).parent / 'data' / 'conv.json')
 
 
 with open(TESTS_PATH_FILE) as f:
@@ -20,6 +20,6 @@ def test_data(request):
 
 @pytest.fixture(scope='module')
 def test_layer_cls():
-    return ReluLayer
+    return ConvLayer
 
-from abbyy_course_cvdl_t1.tests.base import TestLayer
+from a4_course_cvdl_t1.tests.base import TestLayer

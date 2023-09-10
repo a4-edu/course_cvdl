@@ -8,7 +8,7 @@
 * [Cross Entrpopy](https://pytorch.org/docs/stable/generated/torch.nn.LogSoftmax.html#torch.nn.LogSoftmax)
 * [Conv](https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html)
 
-Для всех слоев в пакете есть заготовки, имеющие общий интерфейс [BaseLayer](../task1/abbyy_course_cvdl_t1/base.py). Ваша задача - для каждого слоя реализовать конструктор `.__init__`, методы `.forward` и `.backward`. Все слои в своем поведении максимально близки к PyTorch.
+Для всех слоев в пакете есть заготовки, имеющие общий интерфейс [BaseLayer](../task1/a4_course_cvdl_t1/base.py). Ваша задача - для каждого слоя реализовать конструктор `.__init__`, методы `.forward` и `.backward`. Все слои в своем поведении максимально близки к PyTorch.
 
 ### Тестирование
 К пакету прилагаются авто-тесты, в которых проверяются результаты работы каждого слоя в следующем порядке:
@@ -27,22 +27,22 @@
 ```
 3. Установить пакет:
 ```
-    $ cd abbyy_course_cvdl
+    $ cd a4_course_cvdl
     $ pip install -e task1
 ```
 4. Запустить тесты
 ```
-    pytest --pyargs abbyy_course_cvdl_t1
+    pytest --pyargs a4_course_cvdl_t1
 
 ```
 5. (Опционально) Запустить тесты до первой ошибки
 ```
-    pytest --pyargs abbyy_course_cvdl_t1 -x
+    pytest --pyargs a4_course_cvdl_t1 -x
 
 ```
 6. (Опционально) Запустить тесты определенного слоя
 ```
-    pytest --pyargs abbyy_course_cvdl_t1.tests.test_relu
+    pytest --pyargs a4_course_cvdl_t1.tests.test_relu
 
 ```
 
@@ -66,9 +66,9 @@
 `Доля пройденных тестов` определяется по прогону тестов через GithubAction в вашем форке в ветке master (`Task1 eval full`)
 
 Сроки сдачи:
-- В срок [19.09 – 10.10], `максимум баллов за задание` = 20
-- Начиная с 11.10, `максимум баллов за задание` = 10
-- Начиная с 15.12, баллы за задание не начисляются
+- В срок [12.09 – 3.10], `максимум баллов за задание` = 20
+- Начиная с 3.10, `максимум баллов за задание` = 10
+- Начиная с 18.12, баллы за задание не начисляются
 
 Ваш итоговый `Балл` - максимальный из когда-либо набранных за один прогон тестов.
 

@@ -19,7 +19,7 @@ jobs:
           pip install -e task1/
       - name: Task1 full evaluation
         run: |
-          pytest --pyargs abbyy_course_cvdl_t1
+          pytest --pyargs a4_course_cvdl_t1
   Task1-eval-failfast:
     runs-on: ubuntu-latest
     strategy:
@@ -36,4 +36,4 @@ jobs:
           pip install -e task1/
       - name: Task1 failfast evaluation
         run: |
-          pytest --pyargs abbyy_course_cvdl_t1 -x
+          pytest --pyargs a4_course_cvdl_t1 -x

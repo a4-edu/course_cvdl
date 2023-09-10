@@ -1,8 +1,8 @@
 from torch import nn
 import torch
-from abbyy_course_cvdl_t2.head import CenterNetHead
-from abbyy_course_cvdl_t2.backbone import ResnetBackbone
-from abbyy_course_cvdl_t2.convert import PointsToObjects
+from a4_course_cvdl_t2.head import CenterNetHead
+from a4_course_cvdl_t2.backbone import ResnetBackbone
+from a4_course_cvdl_t2.convert import PointsToObjects
 
 
 class PointsNonMaxSuppression(nn.Module):

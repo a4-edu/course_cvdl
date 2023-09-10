@@ -14,13 +14,13 @@
 В срок [10.10 – 31.10], `максимум баллов за задание` = 20. Начиная с 31.10, `максимум баллов за задание` = 10. Начиная с 15.12, баллы не ставятся.
 
 ### Список компонентов, которые надо реализовать
-- abbyy_course_cvdl_t2.backbone.UpscaleTwiceLayer (2 балла)
-- abbyy_course_cvdl_t2.backbone.HeadlessResnet34 (2 балла)
-- abbyy_course_cvdl_t2.head.CenterNetHead (2 балла)
-- abbyy_course_cvdl_t2.loss.CenterNetLoss (2 балла)
-- abbyy_course_cvdl_t2.convert.ObjectsToPoints (3 балла)
-- abbyy_course_cvdl_t2.convert.PointsToObjects (4 балла)
-- abbyy_course_cvdl_t2.network.PointsNonMaxSuppression (3 балла)
+- a4_course_cvdl_t2.backbone.UpscaleTwiceLayer (2 балла)
+- a4_course_cvdl_t2.backbone.HeadlessResnet34 (2 балла)
+- a4_course_cvdl_t2.head.CenterNetHead (2 балла)
+- a4_course_cvdl_t2.loss.CenterNetLoss (2 балла)
+- a4_course_cvdl_t2.convert.ObjectsToPoints (3 балла)
+- a4_course_cvdl_t2.convert.PointsToObjects (4 балла)
+- a4_course_cvdl_t2.network.PointsNonMaxSuppression (3 балла)
 
 Корректность компонентов оценивается по тестам и "на глаз": если компонент не проходит почему-то тест, но по смыслу верен, он будет засчитан
 Все компоненты - 18 баллов. Еще 2 балла даются за "успешную" тренировку на TinyCoco( см. ниже ).
