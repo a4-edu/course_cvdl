@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 import torch.nn.functional as F
-from abbyy_course_cvdl_t2.convert import ObjectsToPoints
+from a4_course_cvdl_t2.convert import ObjectsToPoints
 
 
 class CenterNetLoss(nn.Module):

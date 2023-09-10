@@ -1,5 +1,5 @@
 import torch
-from abbyy_course_cvdl_t2.loss import CenterNetLoss, ObjectsToPoints
+from a4_course_cvdl_t2.loss import CenterNetLoss, ObjectsToPoints
 
 from .obj_samples import OBJ0, OBJ1, get_obj_samples
 

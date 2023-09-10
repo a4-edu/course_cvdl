@@ -8,7 +8,7 @@
 * [Cross Entrpopy](https://pytorch.org/docs/stable/generated/torch.nn.LogSoftmax.html#torch.nn.LogSoftmax)
 * [Conv](https://pytorch.org/docs/stable/generated/torch.nn.Conv2d.html)
 
-Для всех слоев в пакете есть заготовки, имеющие общий интерфейс [BaseLayer](../task1/abbyy_course_cvdl_t1/base.py). Ваша задача - для каждого слоя реализовать конструктор `.__init__`, методы `.forward` и `.backward`. Все слои в своем поведении максимально близки к PyTorch.
+Для всех слоев в пакете есть заготовки, имеющие общий интерфейс [BaseLayer](../task1/a4_course_cvdl_t1/base.py). Ваша задача - для каждого слоя реализовать конструктор `.__init__`, методы `.forward` и `.backward`. Все слои в своем поведении максимально близки к PyTorch.
 
 ### Тестирование
 К пакету прилагаются авто-тесты, в которых проверяются результаты работы каждого слоя в следующем порядке:
@@ -27,22 +27,22 @@
 ```
 3. Установить пакет:
 ```
-    $ cd abbyy_course_cvdl
+    $ cd a4_course_cvdl
     $ pip install -e task1
 ```
 4. Запустить тесты
 ```
-    pytest --pyargs abbyy_course_cvdl_t1
+    pytest --pyargs a4_course_cvdl_t1
 
 ```
 5. (Опционально) Запустить тесты до первой ошибки
 ```
-    pytest --pyargs abbyy_course_cvdl_t1 -x
+    pytest --pyargs a4_course_cvdl_t1 -x
 
 ```
 6. (Опционально) Запустить тесты определенного слоя
 ```
-    pytest --pyargs abbyy_course_cvdl_t1.tests.test_relu
+    pytest --pyargs a4_course_cvdl_t1.tests.test_relu
 
 ```
 

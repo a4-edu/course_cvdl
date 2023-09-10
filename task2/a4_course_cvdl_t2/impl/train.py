@@ -10,10 +10,10 @@ from torchvision import transforms
 from torchvision.datasets import CocoDetection
 from torchvision.transforms import functional as F
 
-from abbyy_course_cvdl_t2.network import CenterNet
-from abbyy_course_cvdl_t2.loss import CenterNetLoss
+from a4_course_cvdl_t2.network import CenterNet
+from a4_course_cvdl_t2.loss import CenterNetLoss
 
-from abbyy_course_cvdl_t2.impl.data import CocoDetection, CocoTextDetection, CocoDetectionPrepareTransform
+from a4_course_cvdl_t2.impl.data import CocoDetection, CocoTextDetection, CocoDetectionPrepareTransform
 
 DEFAULT_IMAGE_SIZE = (256, 256)
 

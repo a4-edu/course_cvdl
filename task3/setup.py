@@ -6,14 +6,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(
-    name='abbyy_course_cvdl_t3',
+    name='a4_course_cvdl_t3',
     version='0.1.1',
     python_requires='>=3.7.0',
     packages=[''],
-    description='Task3 for ABBYY CV DL course: Text Detection Challenge',
+    description='Task3 for A4 CV DL course: Text Detection Challenge',
     url='',
     author='Boris Zimka',
-    author_email='boris.zimka@abbyy.com',
+    author_email='zimka@phystech.edu',
     install_requires=['numpy', 'matplotlib', 'editdistance', 'requests'],
     classifiers=[
         'Development Status :: 3 - Alpha',

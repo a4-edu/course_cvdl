@@ -1,9 +1,9 @@
 import requests
 import sys
 from pathlib import Path
-from abbyy_course_cvdl_t3 import coco_text
-from abbyy_course_cvdl_t3.coco_text import COCO_Text
-from abbyy_course_cvdl_t3.utils import evaluate_ap_from_cocotext_json
+from a4_course_cvdl_t3 import coco_text
+from a4_course_cvdl_t3.coco_text import COCO_Text
+from a4_course_cvdl_t3.utils import evaluate_ap_from_cocotext_json
 
 
 def update_leaderboard_score(username, score):

@@ -1,5 +1,5 @@
 import torch
-from abbyy_course_cvdl_t2.head import CenterNetHead
+from a4_course_cvdl_t2.head import CenterNetHead
 
 
 def test_head():

@@ -4,9 +4,9 @@ from pathlib import Path
 
 import pytest
 
-from abbyy_course_cvdl_t1.cross_entropy import CrossEntropyLoss
+from a4_course_cvdl_t1.cross_entropy import CrossEntropyLoss
 
-TESTS_PATH_FILE = os.environ.get("ABBYY_TESTS_PATH", Path(__file__).parent / 'data' / 'crossentropy.json')
+TESTS_PATH_FILE = os.environ.get("A4_TESTS_PATH", Path(__file__).parent / 'data' / 'crossentropy.json')
 
 
 with open(TESTS_PATH_FILE) as f:
@@ -29,4 +29,4 @@ def test_layer_cls():
             return super().backward()
     return CrossEntropyLossFacade
 
-from abbyy_course_cvdl_t1.tests.base import TestLayer
+from a4_course_cvdl_t1.tests.base import TestLayer

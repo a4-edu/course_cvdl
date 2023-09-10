@@ -6,14 +6,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(
-    name='abbyy_course_cvdl_t1',
+    name='a4_course_cvdl_t1',
     version='0.1.0',
     python_requires='>=3.7.0',
     packages=[''],
-    description='Task1 for ABBYY CV DL course',
+    description='Task1 for A4 CV DL course',
     url='',
     author='Boris Zimka',
-    author_email='boris.zimka@abbyy.com',
+    author_email='zimka@phystech.edu',
     install_requires=['numpy', 'pytest'],
     classifiers=[
         'Development Status :: 3 - Alpha',

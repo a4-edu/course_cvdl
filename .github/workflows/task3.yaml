@@ -26,4 +26,4 @@ jobs:
           pip install -e task3/
       - name: Compute Average Precision
         run: |
-          python -m abbyy_course_cvdl_t3.compute_ap ${{ github.actor }}
+          python -m a4_course_cvdl_t3.compute_ap ${{ github.actor }}

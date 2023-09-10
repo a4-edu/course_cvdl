@@ -9,11 +9,11 @@ Average в AP делается по confidence от 0 до 1 с шагом 0.1.
 
 Метрика вычисляется по файлу predictions.json, который лежит рядом с README. Чтобы сохранить и оценить ваше решение - вам нужно обновить этот файл и сделать коммит.
 
-Файл predictions.json вы должны создать сами с использованием вашей обученной модели. Проще всего это сделать, используя функцию `abbyy_course_cvdl_t3.utils.dump_detections_to_cocotext_json`. Формат файла тот же, который используют авторы coco-text в своем [репозитории](https://github.com/andreasveit/coco-text).
+Файл predictions.json вы должны создать сами с использованием вашей обученной модели. Проще всего это сделать, используя функцию `a4_course_cvdl_t3.utils.dump_detections_to_cocotext_json`. Формат файла тот же, который используют авторы coco-text в своем [репозитории](https://github.com/andreasveit/coco-text).
 
-Метрику AP вы можете вычислить, используя функцию  `abbyy_course_cvdl_t3.utils.evaluate_ap_from_cocotext_json`. Метрика также вычисляется автоматически через github-action (раздел `Task3 AP` -> `Compute Average Precision`).
+Метрику AP вы можете вычислить, используя функцию  `a4_course_cvdl_t3.utils.evaluate_ap_from_cocotext_json`. Метрика также вычисляется автоматически через github-action (раздел `Task3 AP` -> `Compute Average Precision`).
 
-Для использования `abbyy_course_cvdl_t3` надо установить пакет: `pip install -e task3/`
+Для использования `a4_course_cvdl_t3` надо установить пакет: `pip install -e task3/`
 
 ### Пример baseline
 В ноутбуках baseline_train.ipynb и baseline_eval.ipynb есть пример тренировки детектора, создания файла и вычисления AP.

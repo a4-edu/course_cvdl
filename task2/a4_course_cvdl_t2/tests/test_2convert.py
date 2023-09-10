@@ -1,4 +1,4 @@
-from abbyy_course_cvdl_t2.convert import ObjectsToPoints, PointsToObjects
+from a4_course_cvdl_t2.convert import ObjectsToPoints, PointsToObjects
 from math import floor
 import torch
 import numpy as np
