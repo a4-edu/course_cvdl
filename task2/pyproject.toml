@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "a4_course_cvdl_t2"
+description = "Task2 for A4 CV DL course"
+version = "0.2.0"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "torch",
+    "torchvision"
+]
+
+[tool.hatch]
+build.sources = ["."]
