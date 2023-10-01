@@ -7,10 +7,16 @@ from tqdm import tqdm
 
 
 class Trainer:
-    def __init__(self, *,
-        net: nn.Module, opt: torch.optim.Optimizer,
-        train_loader: tdata.DataLoader, val_loader: tdata.DataLoader, test_loader: tdata.DataLoader,
-        loss: nn.Module, metric: nn.Module,
+    def __init__(
+        self,
+        *,
+        net: nn.Module,
+        opt: torch.optim.Optimizer,
+        train_loader: tdata.DataLoader,
+        val_loader: tdata.DataLoader,
+        test_loader: tdata.DataLoader,
+        loss: nn.Module,
+        metric: nn.Module,
     ):
         self.net = net
         self.opt = opt
