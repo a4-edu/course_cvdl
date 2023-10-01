@@ -99,7 +99,7 @@ class SuimDataset(tdata.Dataset):
         Converts mask[3, H, W] of colors (0-0-0, 0-0-255 ... 255-255-255) into mask[1, H, W]
         (0, 1, 0), (0, 0, 1)
         """
-        assert mask_color.dtype == torch.uint8, mask_color.dtype
+        assert mask_color.dtype == torch.uint8, mask_color.dtype # pylint: disable=no-member
         mask_01 = (mask_color > 0).byte()
         mask_label = mask_01[0] + mask_01[1] * 2 + mask_01[2] * 4
         return mask_label[None]
