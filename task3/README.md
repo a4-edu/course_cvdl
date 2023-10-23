@@ -62,5 +62,5 @@ Average в AP делается по confidence от 0 до 1 с шагом 0.1.
 **Бонусные баллы за AP начисляются до 12.12 без штрафов.**
 
 ### Лидерборд
-При загрузке нового `predictions.json`, ваш AP\*100 будет обновлен на лидерборде [https://keepthescore.co/board/xcmgfzogolr/](https://keepthescore.co/board/xcmgfzogolr/).
+При загрузке нового `predictions.json`, ваш AP\*100 будет обновлен на лидерборде [https://keepthescore.com/board/xcmgfzogolr/](https://keepthescore.com/board/xcmgfzogolr/).
 Лидерборд не несет какой-то важной функции и добавлен просто для интереса.
