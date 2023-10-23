@@ -7,7 +7,7 @@ from a4_course_cvdl_t3.utils import evaluate_ap_from_cocotext_json
 
 
 def update_leaderboard_score(username, score):
-    base_url = 'https://keepthescore.co/api/{}/'
+    base_url = 'https://keepthescore.com/api/{}/'
     rtoken = 'xcmgfzogolr'
     etoken = 'wodbohbooye'
     # читаем лидерборд
@@ -32,7 +32,7 @@ def update_leaderboard_score(username, score):
         return
 
     # если есть разница - отправляем ее
-    data = {"player_id": current_id, "score" : delta, 'comment': '{:+2.3f}'.format(delta)}
+    data = {"player_id": current_id, "score" : delta}
     r = requests.post(base_url.format(etoken) + 'score', json=data)
     if not r.ok:
         return r.json()
