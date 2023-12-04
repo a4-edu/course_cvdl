@@ -11,3 +11,4 @@
 9. CLIP, DM, HuggingFace.
 10. Задача Action Segmentation. MMDetection, MMAction.
 11. Инференс нейросетей.
+12. Фундаментальные модели в CV
