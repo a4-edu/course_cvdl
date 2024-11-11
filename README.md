@@ -5,4 +5,4 @@
 
 В разделе `classes` находятся материалы занятий.
 
-[Записи](https://disk.yandex.ru/d/uss-T2Bxb4pshw) осеннего семестра 2022.
+[Записи](https://disk.yandex.ru/d/niAddUAPJWksfA) осеннего семестра 2022.
